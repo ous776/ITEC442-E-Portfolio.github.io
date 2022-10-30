@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IoT and Security</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <p>Course Code: ITEC442</p>
+        <p>Course Name: IoT and Cyber Security</p>
+        <p>Instructor: Beran Tanseloglu</p>
+        <p>Email: beran.tanseloglu@emu.edu.tr</p>
+    </div>
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html"> Lecture 1 & 2</a></li>
+            <li><a href="lecture2_3.html"> Lecture 2 & 3</a></li>
+            <li><a href="lecture3_4.html"> Lecture 3 & 4</a></li>
+            <li><a href="lecture4_5.html"> Lecture 4 & 5</a></li>
+            <li><a href="lecture5_6.html"> Lecture 5 & 6</a></li>
+
+        </ul>
+    </div>
+
+
+
+    <center><h1>Scanning Activity</h1></center>
+    <h2>Ipconfig</h2>
+    <p>This command displays systems network configuration</p>
+    
+    <img id="myImg" src="a.jpeg" alt="Snow" style="width:100%;max-width:300px">
+    <img id="myIm" src="a.jpeg" alt="Snow" style="width:100%;max-width:300px">
+
+    <h2>Ping</h2>
+
+    <h2>Netstat</h2>
+
+    <h2>Tracert</h2>
+
+    <h2>Nslookup</h2>
+
+    <h2>Whois</h2>
+
+    <h2>Telnet</h2>
+
+    <h2>Mtr</h2>
+
+    <h2>Dig</h2>
+
+    <h2>nMap</h2>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById("myImg");
+        var img1 = document.getElementById("myIm");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+    </script>
+
+
+
+</body>
+
+</html>
