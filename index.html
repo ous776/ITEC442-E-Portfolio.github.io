@@ -32,34 +32,86 @@
     <center><h1>Scanning Activity</h1></center>
     <h2>Ipconfig</h2>
     <p>This command displays systems network configuration.</p>
+    <p>Example: ipconfig, ipconfig all</p>
     
-    <img id="myImg" src="a.jpeg" alt="Snow" style="width:100%;max-width:300px">
-    <img id="myIm" src="a.jpeg" alt="Snow" style="width:100%;max-width:300px">
+    <img id="myImg1" src="img/Ipconfig.png" alt="ipconfig" style="width:100%;max-width:300px">
+    <img id="myImg2" src="img/Ipconfig-.png" alt="ipconfig -?" style="width:100%;max-width:300px">
+    <img id="myImg3" src="img/ipall.jpg" alt="ipconfig all" style="width:100%;max-width:300px"><br><br>
 
     <h2>Ping</h2>
     <p> This is a command used to test the reachability of a host on an Internet Protocol network.</p>
     <p>Example: ping google.com, ping 192.168.2.0</p>
 
+     <img id="myImg4" src="img/ping.png" alt="ping" style="width:100%;max-width:300px">
+    <img id="myImg5" src="img/ping_go.png" alt="ping google.com" style="width:100%;max-width:300px">
+    <img id="myImg6" src="img/ping192.png" alt="ping 192.168.2.0" style="width:100%;max-width:300px"><br><br>
+
     <h2>Netstat</h2>
     <p>The netstat command displays the contents of various network-related data structures for active connections (on your computer).</p>
-    <p>Example: netstat</p>
+    <p>Example: netstat, netstat -a</p>
+
+     <img id="myImg7" src="img/netstat.png" alt="netstat" style="width:100%;max-width:300px">
+    <img id="myImg8" src="img/netstat_q.png" alt="netstat ?" style="width:100%;max-width:300px">
+    <img id="myImg9" src="img/netstata.png" alt="netstat -a" style="width:100%;max-width:300px"><br><br>
+
 
     <h2>Tracert</h2>
+    <p> This command display's the time it takes for a packet of information to travel between a local computer and a destination IP address or domain.</p>
+    <p>Example: tracert, tracert (domain name or ip address)</p>
+
+     <img id="myImg10" src="img/tracert.png" alt="tracert" style="width:100%;max-width:300px">
+    <img id="myImg11" src="img/tracertemu.png" alt="tracert emu.edu.tr" style="width:100%;max-width:300px">
+    <img id="myImg12" src="img/tracert193.png" alt="tracert 193.5.4.1" style="width:100%;max-width:300px"><br><br>
 
     <h2>Nslookup</h2>
     <p>It is a network administration tool for querying the Domain Name System (DNS) to obtain domain name or IP address mapping or any other specific DNS record.</p>
-    <p> -type=record_type where record_type is A, CNAME, MX, PTR, NS, ANY</p>
+    <p>-type = record_type where record_type is a, cname, mx, ptr, ns and any</p>
     <p>nslookup -type=ns domain_name </p>
 
+     <img id="myImg13" src="img/nslookup.png" alt="nslookup" style="width:100%;max-width:300px">
+    <img id="myImg14" src="img/nsgoogle.png" alt="nslookup google.com" style="width:100%;max-width:300px">
+    <img id="myImg15" src="img/ns_nsgoo.png" alt="nslookup -type=ns google.com" style="width:100%;max-width:300px">
+    <img id="myImg16" src="img/nscname.png" alt="nslookup -type=cname google.com" style="width:100%;max-width:300px"><br><br>
+
     <h2>Whois</h2>
+    <p>The whois command is used to find the contact information for a domain name or an IP address</p>
 
     <h2>Telnet</h2>
+    <p>Telnet is an old network protocol that is used to connect to remote systems over a TCP/IP network. </p><p>Its utility allows users to test connectivity to remote machines and issue commands through the use of a keyboard.</p>
 
     <h2>Mtr</h2>
+    <p>The mtr command is a combination of ping and traceroute commands. It is a network diagnostic tool that continuously sends </p><p>packets showing ping time for each hop. It also displays network problems of the entire route taken by the network packets.</p>
 
     <h2>Dig</h2>
+    <p>The dig (domain information groper) command is a flexible tool for interrogating DNS name servers.</p> <p>It performs DNS lookups and displays the answers that are returned from the queried name server(s).</p>
 
     <h2>nMap</h2>
+    <p>Nmap is a network scanning tool, an open source Linux command-line tool—used for network exploration,</p><p> host discovery, and security auditing.</p>
+
+    <center><h2>QUESTION?</h2></center>
+    <P>1.  How many hops from your machine to your assigned website?</P>
+<p><b>Traceroute to emu.edu.tr: 9 hops</b></p>
+<p>2.  Which step cause the biggest delay in the route? What is the average duration of that delay?</p>
+<p><b>to gold-surf.com, 172ms </b></p>
+
+<p>3.  What are the main nameservers of that network?</p>
+<p><b>ns1.emu.edu.tr</b></p>
+<p>4.  Who is the registered contact?</p>
+<p><b>administrator.emu.edu.tr</b></p>
+<p>5.  What is the MX record for the website?</p>
+<p><b>Non-authoritative answer: emu.edu.tr      MX preference = 0, mail exchanger = emu-edu-tr.mail.protection.outlook.com</b></p>
+<p>6.  Where is the website hosted?</p>
+<p><b>Not sure</p>
+
+<h3><u>Reflection</u></h3>
+
+<p>1.  Did you have any issues or challenges with the scans?</p>
+<p><b>Yes, some command are not working on windows OS.</b></p>
+<p>2.  How did you overcome them?</p>
+<p><b>I find some information on website's like whois.com, lookup.icann </b></p>
+<p>3.  How will they affect your final report?
+    <p>It's takes time before I can find the solutions</p>
+
 
 
     <div id="myModal" class="modal">
@@ -78,21 +130,111 @@
         // Get the modal
         var modal = document.getElementById("myModal");
 
-        // Get the image and insert it inside the modal - use its "alt" text as a caption
-        var img = document.getElementById("myImg");
-        var img1 = document.getElementById("myIm");
+        var img1 = document.getElementById("myImg1");
+        var img2 = document.getElementById("myImg2");
+        var img3 = document.getElementById("myImg3");
+        var img4 = document.getElementById("myImg4");
+        var img5 = document.getElementById("myImg5");
+        var img6 = document.getElementById("myImg6");
+        var img7 = document.getElementById("myImg7");
+        var img8 = document.getElementById("myImg8");
+        var img9 = document.getElementById("myImg9");
+        var img10 = document.getElementById("myImg10");
+        var img11 = document.getElementById("myImg11");
+        var img12 = document.getElementById("myImg12");
+        var img13 = document.getElementById("myImg13");
+        var img14 = document.getElementById("myImg14");
+        var img15 = document.getElementById("myImg15");
+        var img16 = document.getElementById("myImg16");
+
         var modalImg = document.getElementById("img01");
         var captionText = document.getElementById("caption");
-        img.onclick = function () {
+        img1.onclick = function () {
             modal.style.display = "block";
             modalImg.src = this.src;
             captionText.innerHTML = this.alt;
         }
 
-        // Get the <span> element that closes the modal
+         img2.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+
+         img3.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+          img4.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+          img5.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+          img6.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+          img7.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+          img8.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+          img9.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+          img10.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+          img11.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+          img12.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+          img13.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+          img14.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+          img15.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+          img16.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+
         var span = document.getElementsByClassName("close")[0];
 
-        // When the user clicks on <span> (x), close the modal
+        
         span.onclick = function () {
             modal.style.display = "none";
         }
