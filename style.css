@@ -15,7 +15,9 @@ h2, h3{
 }
 
 p {
+  
     margin-left: 20px;
+    text-justify: inter-word;
 }
 
 img {
@@ -43,6 +45,12 @@ ul li{
     text-align: center;
    
    
+}
+
+.dig{
+  padding-bottom: 15px;
+  line-height: 1.5;
+  text-align: justify;
 }
 
 li a{  
