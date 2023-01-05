@@ -17,58 +17,67 @@
         <p>Email: beran.tanseloglu@emu.edu.tr</p>
     </div>
     <div class="navbar">
-        <ul>
-            <li><a href="index.html"> Lecture 1 & 2</a></li>
-            <li><a href="lecture2_3.html"> Lecture 2 & 3</a></li>
-            <li><a href="lecture3_4.html"> Lecture 3 & 4</a></li>
-            <li><a href="lecture4_5.html"> Lecture 4 & 5</a></li>
-            <li><a href="lecture5_6.html"> Lecture 5 & 6</a></li>
+        <ul class="nav">
+            <li class="nli"><a href="index.html"> Lecture 1 & 2</a></li>
+            <li class="nli"><a href="lecture2_3.html"> Lecture 2 & 3</a></li>
+            <li class="nli"><a href="lecture3_4.html"> Lecture 3 & 4</a></li>
+            <li class="nli"><a href="lecture4_5.html"> Lecture 4 & 5</a></li>
+            <li class="nli"><a href="lecture6_7.html"> Lecture 6 & 7</a></li>
+            <li class="nli"><a href="lecture8_9.html"> Lecture 8 & 9</a></li>
+            <li class="nli"><a href="lecture10_11.html"> Lecture 10 & 11</a></li>
 
         </ul>
     </div>
 
+    <center>
+        <h1><u>Cyber Kill Chain</u></h1>
+    </center>
 
+    <p>The cyber kill chain is a model for understanding the stages of a cyber attack. It was first introduced by
+        Lockheed Martin in 2011 and has since been widely <br> adopted as a framework for understanding how cyber
+        attacks
+        progress and how they can be stopped. The stages of the cyber kill chain are:</p>
 
-   <!--  <center><h1>Solarwinds article</h1></center>
-    <h2>Ipconfig</h2>
+    <ul class="list">
+        <li>Reconnaissance: The attacker gathers information about the target, such as identifying potential
+            vulnerabilities.</li>
 
+        <li>Weaponization: The attacker creates a means of delivering the attack, such as creating a malicious email or
+            exploit.</li>
 
-    <div id="myModal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="img01">
-        <div id="caption"></div>
-    </div>
+        <li>Delivery: The attack is delivered to the target, such as sending a phishing email or injecting malware into
+            a website.</li>
+
+        <li>Exploitation: The attack takes advantage of a vulnerability in the target system.</li>
+
+        <li>Installation: The attacker installs malware or other tools on the target system to give them persistent
+            access.</li>
+
+        <li>Command and control: The attacker establishes a connection with the target system and can issue commands or
+            exfiltrate data.</li>
+
+        <li>Actions on objectives: The attacker carries out their objectives, such as stealing data or disrupting
+            operations.</li>
+    </ul>
+
+    <p>By understanding the cyber kill chain, organizations can better defend against attacks by identifying and
+        disrupting the attack at an early stage.</p>
+
+    <br><br><br>
+
+    <center>
+        <h3><u>The seven steps of the Cyber Kill Chain</u></h3>
+    </center>
+    <center><img src="img/killchain.png" alt="ipconfig" style="width:100%;max-width:1000px"></center>
+
+    <br><br>
 
     <footer>
-        <center> <p> Copyright <span>&copy</span> Ousman Camara</p>
-<p><a href="mailto:19700230@emu.edu.tr"> 19700230@emu.edu.tr</a></p>
+        <center>
+            <p> Copyright <span>&copy</span> Ousman Camara</p>
+            <p><a href="mailto:19700230@emu.edu.tr"> 19700230@emu.edu.tr</a></p>
         </center>
     </footer>
- -->
-    <script>
-        // Get the modal
-        var modal = document.getElementById("myModal");
-
-        // Get the image and insert it inside the modal - use its "alt" text as a caption
-        var img = document.getElementById("myImg");
-        var img1 = document.getElementById("myIm");
-        var modalImg = document.getElementById("img01");
-        var captionText = document.getElementById("caption");
-        img.onclick = function () {
-            modal.style.display = "block";
-            modalImg.src = this.src;
-            captionText.innerHTML = this.alt;
-        }
-
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function () {
-            modal.style.display = "none";
-        }
-    </script>
-
 
 
 </body>
