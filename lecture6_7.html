@@ -30,47 +30,49 @@
     </div>
 
     <center>
-        <h1><u>Attacks on enterprise Networks</u></h1>
+        <h1><u>Man-in-The-Middle Attack</u></h1>
     </center>
 
-   <!--  <center><h1>Solarwinds article</h1></center>
-    <h2>Ipconfig</h2>
+    <p>A man-in-the-middle (MITM) attack is a type of cyber attack in which an attacker intercepts and alters
+        communications between two parties without their knowledge. The attacker intercepts and relays messages between
+        the two parties, pretending to be the other party, and can read, modify, or inject new messages into the
+        communication stream.</p>
 
+    <p>There are several ways that an attacker can execute a MITM attack. One common method is to use a technique called
+        ARP spoofing. ARP (Address Resolution Protocol) is used to map a network's IP address to its corresponding
+        physical (MAC) address. In an ARP spoofing attack, the attacker sends false ARP messages to the other devices on
+        a network, tricking them into associating the attacker's MAC address with the IP address of a legitimate device
+        on the network. This allows the attacker to intercept and alter traffic intended for the legitimate device.</p>
 
-    <div id="myModal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="img01">
-        <div id="caption"></div>
-    </div>
+    <p>Another common method for executing a MITM attack is through the use of a rogue wireless access point. A rogue
+        wireless access point is a wireless access point that is set up by an attacker to mimic a legitimate wireless
+        access point, in order to intercept and alter wireless traffic.</p>
+
+    <p>A MITM can be used for various malicious activities. For example it can be used to steal sensitive information,
+        such as login credentials, financial information, and personal information. In addition, it can be used to
+        inject malware into the communications stream, or to launch other types of attacks, such as phishing or social
+        engineering attacks.</p>
+
+    <p>To prevent MITM attacks, it's important to use secure communication protocols and to be aware of the security of
+        the networks and devices that you use. Using encryption, such as HTTPS or VPN, can help protect your
+        communications from being intercepted and read. Also, being aware of the security of your network devices and
+        using firewalls and intrusion detection systems, can help prevent your network from being exploited by an
+        attacker.</p>
+
+    <p>It's important to be vigilant in identifying and preventing these type of attack. Be skeptical of any unexpected
+        request for personal information, and avoid clicking on any links or providing personal information unless you
+        are certain that they are legitimate.</p>
+
+        <h4>I tried to demonstrate using Carnary tool but </h4>
+
 
     <footer>
-        <center> <p> Copyright <span>&copy</span> Ousman Camara</p>
-<p><a href="mailto:19700230@emu.edu.tr"> 19700230@emu.edu.tr</a></p>
+        <center>
+            <p> Copyright <span>&copy</span> Ousman Camara</p>
+            <p><a href="mailto:19700230@emu.edu.tr"> 19700230@emu.edu.tr</a></p>
         </center>
     </footer>
- -->
-    <script>
-        // Get the modal
-        var modal = document.getElementById("myModal");
 
-        // Get the image and insert it inside the modal - use its "alt" text as a caption
-        var img = document.getElementById("myImg");
-        var img1 = document.getElementById("myIm");
-        var modalImg = document.getElementById("img01");
-        var captionText = document.getElementById("caption");
-        img.onclick = function () {
-            modal.style.display = "block";
-            modalImg.src = this.src;
-            captionText.innerHTML = this.alt;
-        }
-
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function () {
-            modal.style.display = "none";
-        }
     </script>
 
 
