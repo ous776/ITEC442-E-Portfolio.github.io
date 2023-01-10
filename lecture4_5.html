@@ -33,57 +33,128 @@
         <h1><u>Kali linux and VmWare </u></h1>
     </center>
 
-    <p>Kali Linux is a Debian-based distribution specifically tailored to the needs of penetration testing, digital forensics, and security auditing. It includes a large collection of tools and utilities for these purposes, such as Wireshark, Nmap, and Aircrack-ng. Additionally, Kali Linux is designed to be lightweight and portable, making it easy to carry on a USB drive or other portable storage device, and to run on a wide range of hardware, including laptops and ARM devices such as the Raspberry Pi.</p>
-<p>One of the key features of Kali Linux is its rolling release model, which means that instead of having to download a new version of the operating system every few months or years, updates are delivered continuously. This ensures that users always have the latest security updates and tools at their disposal.</p>
-<p>Some common use cases of Kali Linux are:</p>
-<ul>
-  <li>Penetration Testing</li>
-  <li>Ethical Hacking</li>
-  <li>Digital Forensics</li>
-  <li>Reverse Engineering</li>
-  <li>Wireless Network Auditing etc.</li>
-</ul>
-<br>
-<center><div class="dash">
-    <h3><u>Kali Linux Dashboard</u></h3>
-<img src="img/dash.png" alt="">
-</div></center>
+    <p>Kali Linux is a Debian-based distribution specifically tailored to the needs of penetration testing, digital
+        forensics, and security auditing. It includes a large collection of tools and utilities for these purposes, such
+        as Wireshark, Nmap, and Aircrack-ng. Additionally, Kali Linux is designed to be lightweight and portable, making
+        it easy to carry on a USB drive or other portable storage device, and to run on a wide range of hardware,
+        including laptops and ARM devices such as the Raspberry Pi.</p>
+    <p>One of the key features of Kali Linux is its rolling release model, which means that instead of having to
+        download a new version of the operating system every few months or years, updates are delivered continuously.
+        This ensures that users always have the latest security updates and tools at their disposal.</p>
+    <p>Some common use cases of Kali Linux are:</p>
+    <ul>
+        <li>Penetration Testing</li>
+        <li>Ethical Hacking</li>
+        <li>Digital Forensics</li>
+        <li>Reverse Engineering</li>
+        <li>Wireless Network Auditing etc.</li>
+    </ul>
+    <br>
+    <center>
+        <div class="dash">
+            <h3><u>Kali Linux Dashboard</u></h3>
+            <img src="img/dash.png" alt="">
+        </div>
+    </center>
 
-    <div id="myModal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="img01">
-        <div id="caption"></div>
-    </div>
-
-    <footer>
-        <center> <p> Copyright <span>&copy</span> Ousman Camara</p>
-<p><a href="mailto:19700230@emu.edu.tr"> 19700230@emu.edu.tr</a></p>
+    <center>
+        <h3><u>Using Wireshark</u></h3>
+    </center>
+    <p>Wireshark is a packet sniffer and analysis tool. It captures network traffic from ethernet, Bluetooth, wireless
+        (IEEE.802.11), token ring, and frame relay connections, among others, and stores that data for offline analysis.
+    </p>
+    <h3>Capturing data packets on Wireshark</h3>
+    <ol>
+        <li>When you open Wireshark, you see a screen showing you a list of all the network connections you can monitor.
+            You also have a capture filter field to only capture the network traffic you want to see.</li>
+        <br><br>
+        <center>
+            <div class="dash">
+                <img src="img/w1.png" alt="">
+            </div>
         </center>
-    </footer> -->
 
-    <script>
-        // Get the modal
-        var modal = document.getElementById("myModal");
+        <li>Click the first button on the toolbar, titled “Start capturing packets.”</li>
+        <br><br>
+        <center>
+            <div class="dash">
+                <img src="img/w2.png" alt="">
+            </div>
+        </center><br><br>
+        <li>Once you have captured all the packets needed, stop the capturing and start analyzing each packet one after
+            the other.</li>
+        <br><br>
+        <center>
+            <div class="dash">
+                <img src="img/w3.png" alt="">
+            </div>
+        </center>
+    </ol>
+    <br><br>
 
-        // Get the image and insert it inside the modal - use its "alt" text as a caption
-        var img = document.getElementById("myImg");
-        var img1 = document.getElementById("myIm");
-        var modalImg = document.getElementById("img01");
-        var captionText = document.getElementById("caption");
-        img.onclick = function () {
-            modal.style.display = "block";
-            modalImg.src = this.src;
-            captionText.innerHTML = this.alt;
-        }
+    <center>
+        <h3><u>Implementing HoneyPot</u></h3>
+    </center>
+    <p>To install honeypot in your Kali Linux machine, you need to download and install Pentbox which you can easily
+        find it through Github repository. git clone https://github.com/technicaldata/pentbox-1.8.git. After
+        downloading, you can simply run the pentbox by typing “./pentbox.rb” from pentbox-1.8 folder.</p>
+        <br><br>
+        <center>
+            <div class="dash">
+                <img src="img/h2.png" alt="">
+            </div>
+        </center><br><br>
+    <p>Once it is installed, let us start using the paintbox. Select the network tools and honeypot from the menu to
+        install the honeypot. Go with the manual configuration to install it according to your preferences for a
+        honeypot.</p>
+        <br><br>
+        <center>
+            <div class="dash">
+                <img src="img/h3.png" alt="">
+            </div>
+        </center><br><br>
+    <p>Now you can open the fake port as you wish and insert a fake message. You can also provide the ability to save
+        the record and the record’s name. You can see the honeypot is enabled on the required port, and you can manually
+        enable honeypots for other ports in a similar manner.</p>
+        <br><br>
+        <center>
+            <div class="dash">
+                <img src="img/h4.png" alt="">
+            </div>
+        </center><br><br>
 
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
+        <center><h3><u>Implementing Denial of Service Attack using Slowloris</u></h3></center>
 
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function () {
-            modal.style.display = "none";
-        }
-    </script>
+        <p>download Slowloris : git clone https://github.com/gkbrk/slowloris.git</p>
+        <br><br>
+        <center>
+            <div class="dash">
+                <img src="img/s1.png" alt="">
+            </div>
+        </center><br><br>
+        <p>run: ifconfig command</p>
+        <br><br>
+        <center>
+            <div class="dash">
+                <img src="img/s3.png" alt="">
+            </div>
+        </center><br><br>
+        <p>run: sudo service apache2 start, then service apache2 status command</p>
+        <br><br>
+        <center>
+            <div class="dash">
+                <img src="img/s4.png" alt="">
+            </div>
+        </center><br><br>
+        <p>run: ls -l command<br>run: python3 slowloris.py (your ip address) -s 500</p>
+
+        <h4>My machine got interrupted I couldn't finish the process</h4>
+    <footer>
+        <center>
+            <p> Copyright <span>&copy</span> Ousman Camara</p>
+            <p><a href="mailto:19700230@emu.edu.tr"> 19700230@emu.edu.tr</a></p>
+        </center>
+    </footer> 
 
 
 
