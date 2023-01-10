@@ -1,6 +1,6 @@
 body{
     background-color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .header{
@@ -26,6 +26,7 @@ p {
 
 table {
   border-collapse: collapse;
+  width: 80%;
 }
 
 table, th, td {
@@ -78,9 +79,9 @@ footer{
    color: #fff;
    text-decoration: none;
    font-weight: bold;
-   margin-left: 3px;
+   margin-left: 5px;
    background-color: darkslategrey;
-   padding: 15px 40px 15px 40px;
+   padding: 15px 55px 15px 55px;
       
 }
 
