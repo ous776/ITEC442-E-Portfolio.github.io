@@ -44,6 +44,11 @@ footer{
   border-top: solid 1px;
 }
 
+.dash img{
+  width: 70%; 
+  height: 100%; 
+}
+
 .nav{
     list-style-type: none;
     margin: 0;
@@ -76,21 +81,14 @@ footer{
    margin-left: 3px;
    background-color: darkslategrey;
    padding: 15px 40px 15px 40px;
-   
-    
+      
 }
 
 .nli a:hover{  
   color: gray;
-  
-  
    
 }
-
-
-
-
-    
+  
 #myImg {
   border-radius: 5px;
   cursor: pointer;
